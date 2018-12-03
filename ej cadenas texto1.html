@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ej cadenas de texto</title>
+</head>
+<body>
+	<p id="demo">Yo amo a mi Perro</p>
+
+<button onclick="animal()">cambia</button>
+
+<script>
+function animal() {
+    var str = document.getElementById("demo").innerHTML; 
+    var res = str.replace("Perro", "Gato");
+    document.getElementById("demo").innerHTML = res;
+}
+</script>
+</html>
